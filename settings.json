@@ -1,0 +1,114 @@
+{ "go.toolsManagement.autoUpdate": true,
+ 
+  "window.zoomLevel": 1,
+  "editor.fontSize": 17,
+  "workbench.iconTheme": "material-icon-theme",
+  "breadcrumbs.enabled": false,
+
+  
+  
+
+  "vscodeGoogleTranslate.preferredLanguage": "English",
+  "explorer.confirmDelete": false,
+  
+  "editor.fontFamily": "JetBrains Mono",
+  
+  "workbench.settings.applyToAllProfiles": [
+    "editor.fontFamily",
+    "editor.tabSize"
+  ],
+  "editor.matchBrackets": "never",
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.overviewRulerBorder": false,
+  "editor.glyphMargin": false,
+  // This is for making the base-atelier-dune theme looks smooth on the variables
+  "editor.tokenColorCustomizations": {
+    //"variables": "#a6a28c",
+    "comments": "#2ea542"
+  },
+  "editor.roundedSelection": false,
+  "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "none",
+  "editor.lineNumbers": "on",
+  "editor.cursorBlinking": "solid",
+  "editor.folding": false,
+  "editor.autoClosingBrackets": "never",
+  "editor.insertSpaces": false,
+  "editor.formatOnSave": true,
+  "diffEditor.renderSideBySide": false,
+
+  "vim.leader": "<Space>",
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+    // jump 10 lines
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+
+  "code-runner.runInTerminal": true,
+  "prettier.endOfLine": "auto",
+  "scm.autoReveal": false,
+  "editor.linkedEditing": true,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.html": "html"
+  },
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.activityBar.location": "top"
+
+}
