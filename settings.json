@@ -1,33 +1,37 @@
-{ "go.toolsManagement.autoUpdate": true,
- 
-  "window.zoomLevel": 1,
-  "editor.fontSize": 17,
+{
+  "window.zoomLevel": 1.3,
+  "editor.fontSize": 15,
   "workbench.iconTheme": "material-icon-theme",
   "breadcrumbs.enabled": false,
 
-  
-  
-
   "vscodeGoogleTranslate.preferredLanguage": "English",
   "explorer.confirmDelete": false,
-  
-  "editor.fontFamily": "JetBrains Mono",
-  
+  "editor.fontFamily": "Geist Mono",
   "workbench.settings.applyToAllProfiles": [
     "editor.fontFamily",
     "editor.tabSize"
   ],
-  "editor.matchBrackets": "never",
+
+  "editor.matchBrackets": "never", 
   "editor.hideCursorInOverviewRuler": true,
   "editor.overviewRulerBorder": false,
   "editor.glyphMargin": false,
+  "editor.detectIndentation": true,
+  "editor.suggestSelection": "first",
+
+  "editor.quickSuggestionsDelay": 0,
+
   // This is for making the base-atelier-dune theme looks smooth on the variables
   "editor.tokenColorCustomizations": {
     //"variables": "#a6a28c",
-    "comments": "#2ea542"
+    
+    "comments": "#2ea542",
+   
+    
   },
   "editor.roundedSelection": false,
   "editor.minimap.enabled": false,
+
   "editor.renderLineHighlight": "none",
   "editor.lineNumbers": "on",
   "editor.cursorBlinking": "solid",
@@ -36,19 +40,29 @@
   "editor.insertSpaces": false,
   "editor.formatOnSave": true,
   "diffEditor.renderSideBySide": false,
-
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     // NAVIGATION
     // switch b/w buffers
-    { "before": ["<S-h>"], "commands": [":bprevious"] },
-    { "before": ["<S-l>"], "commands": [":bnext"] },
+    {
+      "before": ["<S-h>"],
+      "commands": [":bprevious"]
+    },
+    {
+      "before": ["<S-l>"],
+      "commands": [":bnext"]
+    },
     // jump 10 lines
     // splits
-    { "before": ["leader", "v"], "commands": [":vsplit"] },
-    { "before": ["leader", "s"], "commands": [":split"] },
-
+    {
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": [":split"]
+    },
     // panes
     {
       "before": ["leader", "h"],
@@ -67,9 +81,18 @@
       "commands": ["workbench.action.focusRightGroup"]
     },
     // NICE TO HAVE
-    { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "q"], "commands": [":q!"] },
-    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["leader", "w"],
+      "commands": [":w!"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": [":q!"]
+    },
+    {
+      "before": ["leader", "x"],
+      "commands": [":x!"]
+    },
     {
       "before": ["[", "d"],
       "commands": ["editor.action.marker.prev"]
@@ -82,8 +105,14 @@
       "before": ["<leader>", "c", "a"],
       "commands": ["editor.action.quickFix"]
     },
-    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
-    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    {
+      "before": ["leader", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["leader", "p"],
+      "commands": ["editor.action.formatDocument"]
+    },
     {
       "before": ["g", "h"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
@@ -91,33 +120,119 @@
   ],
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting
-    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
     // Move selected lines while staying in visual mode
-    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
-    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    },
     // toggle comment selection
-    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+    {
+      "before": ["leader", "c"],
+      "commands": ["editor.action.commentLine"]
+    }
   ],
-
   "code-runner.runInTerminal": true,
   "prettier.endOfLine": "auto",
   "scm.autoReveal": false,
   "editor.linkedEditing": true,
   "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+
   "files.associations": {
     "*.html": "html"
   },
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "Vim Dark Hard",
   "workbench.activityBar.location": "top",
-  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+  "redhat.telemetry.enabled": false,
+  "go.toolsManagement.autoUpdate": true,
+  
+  "cmake.showOptionsMovedNotification": false,
+
   "go.delveConfig": {
     "debugAdapter": "dlv-dap",
     "dlvFlags": ["--only-same-user=false"],
     "showGlobalVariables": true,
     "showRegisters": false,
     "maxStringLen": 1000000
-  }
+  },
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "height": 22,
+    "fontSize": 12
+  },
+
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 11,
+      "y": 10
+    },
+    "frame": false
+  },
+  "window.commandCenter": false,
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "compact",
+  "apc.header": {
+    "height": 36
+  },
+  "apc.font.family": "Geist Mono",
+  "apc.stylesheet": {
+    ".title-label > h2  ": "display: none",
+    ".title-actions": "display: none",
+    ".tabs-and-actions-container > .editor-actions": "display: none",
+    ".window-appicon": "display: none",
+
+    ".editor-actions": "display: none",
+    ".pane-header": "padding: 0 8px"
+  },
+ 
+  "apc.listRow": {
+    "height": 24
+  },
+  "apc.activityBar": {
+    "position": "bottom",
+    "hideSettings": true,
+    "size": 20
+  },
+  
+    
+    "[templ]": {
+        "editor.defaultFormatter": "a-h.templ"
+    },
+
+     "tailwindCSS.includeLanguages": {
+     "templ": "html"
+ },
+
+   
+
+
+  "workbench.colorCustomizations": {
+    "[Vim Dark Hard]": {
+      "editor.background": "#1A1A1A",
+
+      "terminal.background": "#1A1A1A",
+      "activityBar.background": "#1A1A1A",
+      "statusBar.background": "#1A1A1A",
+      "sideBar.background": "#1A1A1A",
+
+      "titleBar.inactiveForeground": "#1A1A1A",
+      "titleBar.border": "#1A1A1A"
+      
+    }
+  },
+  "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false
 }
-
-

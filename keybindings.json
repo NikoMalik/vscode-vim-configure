@@ -1,5 +1,6 @@
+// Place your key bindings in this file to override the defaults
 [
-	{
+  {
   "key": "shift+a",
   "command": "workbench.action.terminal.focusNext",
   "when": "terminalFocus"
@@ -33,10 +34,19 @@
   "key": "r",
   "when": "filesExplorerFocus && !inputFocus"
 },
- {
+{
   "command": "renameFile",
   "key": "r",
   "when": "filesExplorerFocus && !inputFocus"
+},
+{
+  "command": "editor.action.revealDefinition",
+  "key": "alt+f",
+  "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+},
+{
+  "command": "workbench.action.closeGroup",
+  "key": "ctrl+k ",
+  "when": "!terminalFocus && activeMenuGroup != 'navigation'"
 }
- 
 ]
