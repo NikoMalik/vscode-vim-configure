@@ -1,18 +1,23 @@
 {
-  "window.zoomLevel": 1.3,
-  "editor.fontSize": 15,
+  "window.zoomLevel": 1.0,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.8,
   "workbench.iconTheme": "material-icon-theme",
   "breadcrumbs.enabled": false,
 
   "vscodeGoogleTranslate.preferredLanguage": "English",
   "explorer.confirmDelete": false,
   "editor.fontFamily": "Geist Mono",
+  "workbench.colorTheme": "Vim Dark Hard",
   "workbench.settings.applyToAllProfiles": [
     "editor.fontFamily",
     "editor.tabSize"
   ],
+  "workbench.editor.empty.hint": "hidden",
 
-  "editor.matchBrackets": "never", 
+  "extensions.ignoreRecommendations": true,
+
+  "editor.matchBrackets": "never",
   "editor.hideCursorInOverviewRuler": true,
   "editor.overviewRulerBorder": false,
   "editor.glyphMargin": false,
@@ -20,25 +25,114 @@
   "editor.suggestSelection": "first",
 
   "editor.quickSuggestionsDelay": 0,
-
-  // This is for making the base-atelier-dune theme looks smooth on the variables
   "editor.tokenColorCustomizations": {
-    //"variables": "#a6a28c",
-    
-    "comments": "#2ea542",
-   
-    
+    // "variables": "#bb35bf",
+
+    "comments": "#2ea542"
+  },
+
+  "workbench.colorCustomizations": {
+    "[Vim Dark Hard]": {
+      "editorRuler.foreground": "#2A2A2A",
+      "editorLineNumber.foreground": "#727272",
+      "activityBar.background": "#1A1A1A",
+      "activityBar.foreground": "#7D7D7D",
+      "activityBarBadge.background": "#383838",
+      "badge.background": "#383838",
+      "badge.foreground": "#C1C1C1",
+      "button.background": "#333",
+      "editor.background": "#1f1f1f",
+      "editor.lineHighlightBorder": "#303030",
+      "editorGroupHeader.tabsBackground": "#1A1A1A",
+      "editorGroupHeader.tabsBorder": "#1A1A1A",
+      "editorSuggestWidget.background": "#1A1A1A",
+      "focusBorder": "#444",
+      "foreground": "#888888",
+      "gitDecoration.ignoredResourceForeground": "#444444",
+      "input.background": "#2A2A2A",
+      "input.foreground": "#E0E0E0",
+      "list.activeSelectionBackground": "#212121",
+      "list.activeSelectionForeground": "#F5F5F5",
+      "list.focusBackground": "#292929",
+      "list.highlightForeground": "#EAEAEA",
+      "list.hoverBackground": "#262626",
+      "list.hoverForeground": "#9E9E9E",
+      "list.inactiveSelectionBackground": "#212121",
+      "list.inactiveSelectionForeground": "#F5F5F5",
+      "panelTitle.activeBorder": "#1f1f1f",
+      "panelTitle.activeForeground": "#FAFAFA",
+      "panelTitle.inactiveForeground": "#484848",
+      "peekView.border": "#444",
+      "peekViewEditor.background": "#242424",
+      "pickerGroup.border": "#363636",
+      "pickerGroup.foreground": "#EAEAEA",
+      "progressBar.background": "#FAFAFA",
+      "scrollbar.shadow": "#1f1f1f",
+      "sideBar.background": "#1A1A1A",
+      "sideBarSectionHeader.background": "#202020",
+      "statusBar.background": "#1A1A1A",
+      "statusBar.debuggingBackground": "#1A1A1A",
+      "statusBar.foreground": "#7E7E7E",
+      "statusBar.noFolderBackground": "#1A1A1A",
+      "statusBarItem.remoteForeground": "#7E7E7E",
+      "statusBarItem.remoteBackground": "#1a1a1a00",
+      "statusBarItem.prominentBackground": "#fafafa1a",
+      "tab.activeBorder": "#1e1e1e",
+      "tab.activeForeground": "#FAFAFA",
+      "tab.border": "#1A1A1A",
+      "tab.inactiveBackground": "#1A1A1A",
+      "tab.inactiveForeground": "#727272",
+      "textLink.foreground": "#CCC",
+      "textLink.activeForeground": "#fafafa",
+      "titleBar.activeBackground": "#1A1A1A",
+      "titleBar.border": "#00000000",
+      "terminal.ansiBrightBlack": "#5c5c5c",
+      "inputOption.activeBackground": "#3a3a3a",
+      "debugIcon.continueForeground": "#FF7A84",
+      "debugIcon.disconnectForeground": "#FF7A84",
+      "debugIcon.pauseForeground": "#FF7A84",
+      "debugIcon.restartForeground": "#79b8ff",
+      "debugIcon.startForeground": "#79b8ff",
+      "debugIcon.stepBackForeground": "#FF7A84",
+      "debugIcon.stepIntoForeground": "#FF7A84",
+      "debugIcon.stepOutForeground": "#FF7A84",
+      "debugIcon.stepOverForeground": "#FF7A84",
+      "debugIcon.stopForeground": "#79b8ff",
+      "debugIcon.breakpointCurrentStackframeForeground": "#79b8ff",
+      "debugIcon.breakpointDisabledForeground": "#848484",
+      "debugIcon.breakpointForeground": "#FF7A84",
+      "debugIcon.breakpointStackframeForeground": "#79b8ff",
+      "debugIcon.breakpointUnverifiedForeground": "#848484",
+      "symbolIcon.classForeground": "#FF9800",
+      "symbolIcon.enumeratorForeground": "#FF9800",
+      "symbolIcon.eventForeground": "#FF9800",
+      "symbolIcon.methodForeground": "#b392f0",
+      "symbolIcon.constructorForeground": "#b392f0",
+      "symbolIcon.functionForeground": "#b392f0",
+      "symbolIcon.fieldForeground": "#79b8ff",
+      "symbolIcon.interfaceForeground": "#79b8ff",
+      "symbolIcon.variableForeground": "#79b8ff",
+      "symbolIcon.enumeratorMemberForeground": "#79b8ff",
+      "diffEditor.insertedTextBackground": "#3a632a4b",
+      "diffEditor.removedTextBackground": "#88063852",
+      "terminal.background": "#1A1A1A"
+    }
   },
   "editor.roundedSelection": false,
   "editor.minimap.enabled": false,
+  "editor.cursorSmoothCaretAnimation": "on",
 
   "editor.renderLineHighlight": "none",
   "editor.lineNumbers": "on",
-  "editor.cursorBlinking": "solid",
+
+  "editor.cursorBlinking": "expand",
   "editor.folding": false,
   "editor.autoClosingBrackets": "never",
   "editor.insertSpaces": false,
   "editor.formatOnSave": true,
+  "[templ]": {
+    "editor.defaultFormatter": "a-h.templ"
+  },
   "diffEditor.renderSideBySide": false,
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
@@ -143,23 +237,42 @@
       "commands": ["editor.action.commentLine"]
     }
   ],
+
   "code-runner.runInTerminal": true,
   "prettier.endOfLine": "auto",
   "scm.autoReveal": false,
   "editor.linkedEditing": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.compactFolders": false,
-
   "files.associations": {
     "*.html": "html"
   },
-  "workbench.colorTheme": "Vim Dark Hard",
-  "workbench.activityBar.location": "top",
   "redhat.telemetry.enabled": false,
   "go.toolsManagement.autoUpdate": true,
-  
-  "cmake.showOptionsMovedNotification": false,
-
+ 
+ 
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
   "go.delveConfig": {
     "debugAdapter": "dlv-dap",
     "dlvFlags": ["--only-same-user=false"],
@@ -172,67 +285,70 @@
     "height": 22,
     "fontSize": 12
   },
+  "apc.sidebar.titlebar": {
+    "fontSize": 10,
+    "fontWeight": "bold"
+  },
+  "apc.menubar.compact": true,
 
   "apc.electron": {
-    "titleBarStyle": "hiddenInset",
+    "frame": true,
+
     "trafficLightPosition": {
-      "x": 11,
-      "y": 10
+      "x": 15,
+      "y": 13
     },
-    "frame": false
+    "trafficLightPositionRight": {
+      "x": 15,
+      "y": 13
+    }
   },
-  "window.commandCenter": false,
-  "window.titleBarStyle": "custom",
-  "window.menuBarVisibility": "compact",
   "apc.header": {
     "height": 36
   },
   "apc.font.family": "Geist Mono",
+  "window.menuBarVisibility": "toggle",
+  "window.commandCenter": false,
+
   "apc.stylesheet": {
-    ".title-label > h2  ": "display: none",
-    ".title-actions": "display: none",
-    ".tabs-and-actions-container > .editor-actions": "display: none",
+    ".sidebar > .composite": "height 12px !important",
+
+    ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: space-evenly !important",
+    ".monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab": {
+      "--editor-group-tab-height": 1.2
+    },
+
+    ".title-label > h2": "display: none !important ",
+
+    ".global-actions": "display: none",
+    ".monaco-list-row": "border-radius: 4px",
+  
+
     ".window-appicon": "display: none",
 
     ".editor-actions": "display: none",
     ".pane-header": "padding: 0 8px"
   },
- 
   "apc.listRow": {
     "height": 24
   },
   "apc.activityBar": {
     "position": "bottom",
-    "hideSettings": true,
-    "size": 20
+
+    "size": 32,
+    "itemSize": 28,
+    "itemMargin": 0
   },
-  
-    
-    "[templ]": {
-        "editor.defaultFormatter": "a-h.templ"
-    },
-
-     "tailwindCSS.includeLanguages": {
-     "templ": "html"
- },
-
-   
-
-
-  "workbench.colorCustomizations": {
-    "[Vim Dark Hard]": {
-      "editor.background": "#1A1A1A",
-
-      "terminal.background": "#1A1A1A",
-      "activityBar.background": "#1A1A1A",
-      "statusBar.background": "#1A1A1A",
-      "sideBar.background": "#1A1A1A",
-
-      "titleBar.inactiveForeground": "#1A1A1A",
-      "titleBar.border": "#1A1A1A"
-      
-    }
+  "tailwindCSS.includeLanguages": {
+    "templ": "html"
   },
+
   "workbench.statusBar.visible": false,
-  "workbench.layoutControl.enabled": false
+  "workbench.layoutControl.enabled": false, 
+  "git.openRepositoryInParentFolders": "never",
+  "update.mode": "none",
+  "workbench.editor.enablePreview": false,
+  "window.restoreFullscreen": true,
+  "git.terminalAuthentication": false,
+  "cmake.showOptionsMovedNotification": false
 }
