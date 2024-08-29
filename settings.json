@@ -1,14 +1,13 @@
 {
-  "window.zoomLevel": 1.0,
+  "window.zoomLevel": 0.4,
   "editor.fontSize": 14,
-  "editor.lineHeight": 1.8,
+  "editor.lineHeight": 1.5,
   "workbench.iconTheme": "material-icon-theme",
   "breadcrumbs.enabled": false,
 
   "vscodeGoogleTranslate.preferredLanguage": "English",
   "explorer.confirmDelete": false,
-  "editor.fontFamily": "Geist Mono",
-  "workbench.colorTheme": "Vim Dark Hard",
+  "editor.fontFamily": "JetBrains Mono",
   "workbench.settings.applyToAllProfiles": [
     "editor.fontFamily",
     "editor.tabSize"
@@ -26,13 +25,28 @@
 
   "editor.quickSuggestionsDelay": 0,
   "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword.operator.address.go ",
+        "settings": {
+          "foreground": "#45CB85"
+        }
+      }
+    ],
     // "variables": "#bb35bf",
 
-    "comments": "#2ea542"
+    "comments": "#2ea542",
+     
+    
   },
+  "editor.inlayHints.enabled": "off",
+
 
   "workbench.colorCustomizations": {
-    "[Vim Dark Hard]": {
+   
+      
+      
+      
       "editorRuler.foreground": "#2A2A2A",
       "editorLineNumber.foreground": "#727272",
       "activityBar.background": "#1A1A1A",
@@ -48,7 +62,7 @@
       "editorSuggestWidget.background": "#1A1A1A",
       "focusBorder": "#444",
       "foreground": "#888888",
-      "gitDecoration.ignoredResourceForeground": "#444444",
+
       "input.background": "#2A2A2A",
       "input.foreground": "#E0E0E0",
       "list.activeSelectionBackground": "#212121",
@@ -116,7 +130,7 @@
       "diffEditor.insertedTextBackground": "#3a632a4b",
       "diffEditor.removedTextBackground": "#88063852",
       "terminal.background": "#1A1A1A"
-    }
+  
   },
   "editor.roundedSelection": false,
   "editor.minimap.enabled": false,
@@ -248,9 +262,7 @@
     "*.html": "html"
   },
   "redhat.telemetry.enabled": false,
-  "go.toolsManagement.autoUpdate": true,
- 
- 
+  "go.toolsManagement.autoUpdate": true, 
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "source": "PowerShell",
@@ -306,7 +318,7 @@
   "apc.header": {
     "height": 36
   },
-  "apc.font.family": "Geist Mono",
+  "apc.font.family": "JetBrains Mono",
   "window.menuBarVisibility": "toggle",
   "window.commandCenter": false,
 
@@ -322,7 +334,7 @@
 
     ".global-actions": "display: none",
     ".monaco-list-row": "border-radius: 4px",
-  
+    //   ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none",
 
     ".window-appicon": "display: none",
 
@@ -350,5 +362,7 @@
   "workbench.editor.enablePreview": false,
   "window.restoreFullscreen": true,
   "git.terminalAuthentication": false,
-  "cmake.showOptionsMovedNotification": false
+  "cmake.showOptionsMovedNotification": false,
+  "workbench.colorTheme": "GrunBoxTheme",
+  "makefile.configureOnOpen": false
 }
