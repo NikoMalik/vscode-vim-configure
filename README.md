@@ -1,7 +1,7 @@
 # vscode-vim-configure
 my own vscode configure
 
-https://marketplace.visualstudio.com/items?itemName=jdinhlife.gruvbox + APC UI
+https://marketplace.visualstudio.com/items?itemName=Ransh.ransh + APC UI
 
 ![image](https://github.com/user-attachments/assets/cb1cf6be-31f7-4ecf-b7e2-151c724a2965)
 
