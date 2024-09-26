@@ -2,10 +2,10 @@
 my own vscode configure
 
 FONT-GEIST MONO
-*VIM*
 
 
-https://marketplace.visualstudio.com/items?itemName=Ransh.ransh + APC UI
+
+https://marketplace.visualstudio.com/items?itemName=Ransh.ransh + APC UI + VIM
 
 
 
